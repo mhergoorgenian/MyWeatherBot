@@ -36,5 +36,4 @@ def get_country_weather(message):
     except requests.RequestException:
         bot.reply_to(message, "Error: Unable to retrieve data. Please try again later.")
 
-# Start polling
 bot.polling()
