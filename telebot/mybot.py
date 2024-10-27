@@ -15,7 +15,7 @@ def get_country_weather(message):
     try:
         country = message.text.split()[1]
     except IndexError:
-        bot.reply_to(message, "Please provide a country name. Usage: /country country_name")
+        bot.reply_to(message, "Usage: /country country_name")
         return
 
 
@@ -34,6 +34,6 @@ def get_country_weather(message):
         bot.reply_to(message, weather_info)
 
     except requests.RequestException:
-        bot.reply_to(message, "Error: Unable to retrieve data. Please try again later.")
+        bot.reply_to(message, "Error: please try again later.")
 
 bot.polling()
