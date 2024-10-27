@@ -4,7 +4,7 @@ import time
 
 
 TOKEN = 'bot token' 
-bot = telebot.TeleBot(TOKEN)
+API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 
 DJANGO_API_URL = "your.ip/api/"  
