@@ -1,54 +1,57 @@
-🌦️ MyWeatherBot
-MyWeatherBot is a Django-based web app integrated with a Telegram bot to provide real-time weather information by country. Users can retrieve weather updates directly from the bot or through the Django API.
+Got it! Here’s your README with structured headers and code blocks.
 
-🚀 Features
-Weather Data Retrieval: Real-time weather information for any specified country.
-RESTful API: Django API serves weather data in JSON format.
-Telegram Bot: Users can get weather data via simple commands in Telegram.
-📁 Project Structure
-bash
-Copy code
-MyWeatherBot/
-├── views.py           # Django view to handle API requests
-├── mybot.py           # Telegram bot script
-├── requirements.txt   # Dependencies
-└── README.md          # Project documentation
-🛠️ Setup
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/mhergoorgenian/MyWeatherBot.git
-cd MyWeatherBot
-2. Install Dependencies
-bash
-Copy code
-pip install -r requirements.txt
-3. Set API Keys
-Weather API Key: Replace API_KEY in views.py with your WeatherAPI key.
-Telegram Bot Token: Replace TOKEN in mybot.py with your Telegram Bot token.
-4. Run the Django Server
-bash
-Copy code
-python manage.py runserver
-5. Start the Telegram Bot
-bash
-Copy code
-python mybot.py
-💬 Usage
-Telegram Bot Commands
-/country [country_name]: Retrieve current weather for the specified country.
-Example:
-plaintext
-Copy code
-/country Japan
-Django API Endpoint
-The API endpoint provides weather data in JSON format.
+---
 
-Endpoint: http://127.0.0.1:8000/api/[country]
-Example:
-plaintext
-Copy code
-http://127.0.0.1:8000/api/Japan
-❓ Troubleshooting
-Make sure API keys are correctly set in views.py and mybot.py.
-Confirm that the Django server is running before using the bot.
+# Django & Telebot Weather Bot
+
+This Python application combines Django and Telebot to provide real-time weather updates. Users can query weather information for a specified country through a Telegram bot, which retrieves data via a Django REST API integrated with WeatherAPI.
+
+## Prerequisites
+
+- Python 3.x
+- Django
+- Django REST Framework
+- Telebot
+- Requests library
+
+## Installation
+
+1. Ensure Python 3.x is installed.
+
+2. Install the required libraries:
+
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Set up API keys:
+   - **WeatherAPI Key**: Replace `API_KEY` in `views.py` with your WeatherAPI key.
+   - **Telegram Bot Token**: Replace `TOKEN` in `mybot.py` with your Telegram Bot token.
+
+2. Run the Django server:
+
+   ```shell
+   python manage.py runserver
+   ```
+
+3. Start the Telegram bot:
+
+   ```shell
+   python mybot.py
+   ```
+
+4. Use the bot on Telegram:
+   - **Command**: `/country [country_name]` to get the current weather for a specified country.
+
+## Contributing
+
+Contributions are welcome! If you encounter issues or have ideas for improvements, please create an issue or submit a pull request.
+
+## Acknowledgements
+
+- Django & Django REST Framework
+- Telebot
+- Requests
+- WeatherAPI
