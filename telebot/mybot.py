@@ -4,7 +4,7 @@ import time
 
 
 TOKEN = 'bot token' 
-API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
+API_URL = f"https://api.telegram.org/bot{TOKEN}"
 
 
 DJANGO_API_URL = "your.ip/api/"  
