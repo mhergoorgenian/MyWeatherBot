@@ -10,9 +10,7 @@ API_KEY = "apikey"
 
 @api_view(['GET'])
 def get_data_view(request, country):
-    # Assuming `apikey` is stored in an environment variable
-    
-    
+
     if not API_KEY:
         return Response({"error": "API key not found"}, status=500)
 
@@ -20,7 +18,7 @@ def get_data_view(request, country):
     
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raise an error for HTTP errors
+        response.raise_for_status()
         data = response.json()
     except requests.exceptions.RequestException as e:
         return Response({"error": str(e)}, status=response.status_code if response else 500)
