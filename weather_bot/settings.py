@@ -27,9 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-BOT_TOKEN="7733664241:AAGRon4oRm2qnSGwpCXKpQwXESmUz_8QyIc"
-BOT_URL="https://api.telegram.org/bot%s/"%BOT_TOKEN
-BOT_CHAT="1917400044"
+
 # Application definition
 
 INSTALLED_APPS = [
