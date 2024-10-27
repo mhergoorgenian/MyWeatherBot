@@ -43,11 +43,8 @@ This Python application combines Django and Telebot to provide real-time weather
    ```
 
 4. Use the bot on Telegram:
-   - **Command**: `/country [country_name]` to get the current weather for a specified country.
-
-## Contributing
-
-Contributions are welcome! If you encounter issues or have ideas for improvements, please create an issue or submit a pull request.
+   - **Command**: `/country [country_name]` to get the current weather for a specified country
+   
 
 ## Acknowledgements
 
