@@ -1,6 +1,6 @@
-import telebot
 import requests
-import os
+import time
+
 
 
 TOKEN = 'bot token' 
