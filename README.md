@@ -1,4 +1,3 @@
-Here's a sample `README.md` file for your GitHub repository that details the functionality of your Telegram bot for retrieving weather information. You can modify it further to suit your style or add any additional details you think are necessary.
 
 ```markdown
 # Weather Telegram Bot
