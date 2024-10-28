@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+API_KEY ='apikey' #weatherApikey
 
 # Application definition
 
