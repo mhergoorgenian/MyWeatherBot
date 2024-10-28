@@ -1,6 +1,8 @@
 from django.urls import path
-from bot import views
+from .views import WebHookView,SendMessageView
 
 urlpatterns = [
-    path('<str:country>/', view=views.get_data_view, name='get_data')
+    path('setwebhook/', WebHookView.as_view(), name='telegram_webhook'),
+    path('getpost/',SendMessageView.as_view(), name='send_message'),
+    
 ]
